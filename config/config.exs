@@ -8,7 +8,7 @@
 import Config
 
 config :counterEX,
-  ecto_repos: [CounterEX.Repo]
+  ecto_repos: []
 
 # Configures the endpoint
 config :counterEX, CounterEXWeb.Endpoint,

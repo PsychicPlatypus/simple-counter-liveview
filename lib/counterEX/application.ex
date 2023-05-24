@@ -8,8 +8,6 @@ defmodule CounterEX.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
-      CounterEX.Repo,
       # Start the Telemetry supervisor
       CounterEXWeb.Telemetry,
       # Start the PubSub system

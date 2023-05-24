@@ -18,7 +18,7 @@ defmodule CounterEX.DataCase do
 
   using do
     quote do
-      alias CounterEX.Repo
+      alias
 
       import Ecto
       import Ecto.Changeset
@@ -36,7 +36,7 @@ defmodule CounterEX.DataCase do
   Sets up the sandbox based on the test tags.
   """
   def setup_sandbox(tags) do
-    pid = Ecto.Adapters.SQL.Sandbox.start_owner!(CounterEX.Repo, shared: not tags[:async])
+    pid = Ecto.Adapters.SQL.Sandbox.start_owner!(, shared: not tags[:async])
     on_exit(fn -> Ecto.Adapters.SQL.Sandbox.stop_owner(pid) end)
   end
 
