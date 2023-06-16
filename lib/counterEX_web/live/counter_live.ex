@@ -22,7 +22,6 @@ defmodule CounterEXWeb.CounterLive do
 
   def handle_event("increment", _unsigned_params, socket) do
     socket = update(socket, :counter, &(&1 + 1))
-
     {:noreply, socket}
   end
 
